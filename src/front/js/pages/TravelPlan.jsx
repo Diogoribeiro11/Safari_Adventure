@@ -7,4 +7,4 @@ const TravelPlan = () => {
   )
 }
 
-export default TravelPlan
+export default TravelPlan;
