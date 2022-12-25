@@ -25,7 +25,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       getUsers: async () => {
         await fetch(
-          "https://3001-logedi-safariadventure-51bcqx5vtpw.ws-eu80.gitpod.io/user"
+          "https://3001-kamiwey-safariadventure-glqsnmf0hcw.ws-eu80.gitpod.io/user"
         )
           .then((response) => response.json())
           .then((data) => console.log(data))
@@ -39,7 +39,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       //Detalle user
       // verDetalle: async id => {
-      // 	await fetch(`https://3001-logedi-safariadventure-51bcqx5vtpw.ws-eu80.gitpod.io/users/${id}`)
+      // 	await fetch(`https://3001-kamiwey-safariadventure-glqsnmf0hcw.ws-eu80.gitpod.io/users/${id}`)
       // 		.then(response => response.json())
       // 		.then(data => {
       //       console.log(data)
@@ -54,7 +54,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       setLogin: async (loginInfo) => {
         await fetch(
-          "https://3001-logedi-safariadventure-51bcqx5vtpw.ws-eu80.gitpod.io/login",
+          "https://3001-kamiwey-safariadventure-glqsnmf0hcw.ws-eu80.gitpod.io/login",
           {
             method: "POST",
             headers: {
@@ -80,7 +80,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         try {
           const store = getStore();
           await fetch(
-            `https://3001-logedi-safariadventure-51bcqx5vtpw.ws-eu80.gitpod.io/users/${id}`,
+            `https://3001-kamiwey-safariadventure-glqsnmf0hcw.ws-eu80.gitpod.io/users/${id}`,
             {
               method: "GET",
               headers: {
@@ -126,7 +126,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       setRegister: (signupData) => {
         fetch(
-          "https://3001-logedi-safariadventure-51bcqx5vtpw.ws-eu80.gitpod.io/user",
+          "https://3001-kamiwey-safariadventure-glqsnmf0hcw.ws-eu80.gitpod.io/user",
           {
             method: "POST",
             headers: {

@@ -82,8 +82,8 @@ const Layout = () => {
             <Route element={<Login />} path="/login" />
 			      <Route element={<Register />} path="/register" />
 			      <Route element={<Public />} path="/public" />
-            <Route element={<Profile />} path="Profile" />
-            <Route element={<ProfileSettings />} path="edit_profile" />
+            <Route element={<Profile />} path="/Profile" />
+            <Route element={<ProfileSettings />} path="/ProfileSttings" />
             
             <Route exact path="/demo" element={<Demo />} />
             <Route exact path="/single/:id" element={<Single />} />
