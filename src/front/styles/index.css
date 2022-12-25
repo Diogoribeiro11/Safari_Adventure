@@ -152,6 +152,10 @@ font-size: 48px;
   /* padding: 1rem 0.5rem;
 } */
 
+.loginForm{ 
+  border: black;
+}
+
 .logSection {
   width: 100%;
   max-width: 420px;
@@ -176,6 +180,9 @@ form {
   color: red;
 } */
 
+input[type="name"],
+input[type="last_name"],
+input[type="country"],
 input[type="email"],
 input[type="password"],
 textarea {

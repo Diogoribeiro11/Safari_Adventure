@@ -46,10 +46,10 @@ const Login = () => {
   };
 
   return (
-    <div className=" container mt-5">
-      <div className="row justify-content-center">
-        <div className="col-md-6 col-lg-4">
-          <h2 className="text-center display-3">Login</h2>
+    <div className=" container">
+      <div className="App row row-cols-2 g-3 mt-5">
+        <div className="logSection col-6">
+          <h2>Login</h2>
           {validacion ? (
             <p className="text-center mt-3 alert alert-danger">{error}</p>
           ) : null}
@@ -59,9 +59,9 @@ const Login = () => {
               Not valid Email or Password
             </p>
           ) : null}
-          <form onSubmit={handleSubmit} className="mt-4">
+          <form onSubmit={handleSubmit} >
             <div className="mb-2">
-              <label className="form-label">Email</label>
+              <label>Email</label>
               <input
                 type="email"
                 className="form-control"
@@ -81,7 +81,7 @@ const Login = () => {
               />
             </div>
             <div className="d-grid mt-4">
-              <button className="btn btn-success">Login</button>
+              <button className="signButton">Login</button>
             </div>
             <div className="mt-4 text-center">
               <p className="fw-bold">
