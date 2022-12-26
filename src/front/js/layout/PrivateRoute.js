@@ -8,7 +8,7 @@ const PrivateRoute = ({ children }) => {
 
   console.log(store.user);
 
-  return store.datos?.token ? children : <Navigate to="/" />;
+  return store.body?.token ? children : <Navigate to="/" />;
 };
 
 export default PrivateRoute;

@@ -5,7 +5,7 @@ import "../../styles/profile.css";
 
 const Profile = () => {
   const { store, actions } = useContext(Context);
-  console.log(store.datos?.token);
+  console.log(store.body?.token);
   console.log(store.user);
   const { id } = useParams();
 
@@ -21,27 +21,46 @@ const Profile = () => {
       <h1 className="text-center">Country: {store.user.country}</h1>
 
       <div>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+          rel="stylesheet"
+        />
         <div className="main-content">
+          {/* -----------------------------------Header---------------------------------------------------------------- */}
 
-{/* -----------------------------------Header---------------------------------------------------------------- */}
-
-          <div className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style={{minHeight: '600px', backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/5/57/Maasai_Mara_National_Reserve_Kenya.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top'}}>
+          <div
+            className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+            style={{
+              minHeight: "600px",
+              backgroundImage:
+                "url(https://upload.wikimedia.org/wikipedia/commons/5/57/Maasai_Mara_National_Reserve_Kenya.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center top",
+            }}
+          >
             {/* Mask */}
             <span className="mask bg-gradient-default opacity-8" />
             {/* Header container */}
             <div className="container-fluid d-flex align-items-center">
               <div className="row">
                 <div className="col-lg-7 col-md-10">
-                  <h1 className="display-2 text-white">Hello {store.user.name}</h1>
-                  <p className="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-                  <a href="#!" className="btn btn-info">Edit profile</a>
+                  <h1 className="display-2 text-white">
+                    Hello {store.user.name}
+                  </h1>
+                  <p className="text-white mt-0 mb-5">
+                    This is your profile page. You can see the progress you've
+                    made with your work and manage your projects or assigned
+                    tasks
+                  </p>
+                  <a href="#!" className="btn btn-info">
+                    Edit profile
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-{/*---------------------------------------------------- Profile content--------------------------------------------------- */}
+          {/*---------------------------------------------------- Profile content--------------------------------------------------- */}
 
           <div className="container-fluid mt--7">
             <div className="row">
@@ -51,15 +70,25 @@ const Profile = () => {
                     <div className="col-lg-3 order-lg-2">
                       <div className="card-profile-image">
                         <a href="#">
-                          <img src="https://thumbs.dreamstime.com/z/male-tourist-glasses-hat-icon-simple-flat-design-illustration-74079657.jpg" className="rounded-circle" />
+                          <img
+                            src="https://thumbs.dreamstime.com/z/male-tourist-glasses-hat-icon-simple-flat-design-illustration-74079657.jpg"
+                            className="rounded-circle"
+                          />
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                     <div className="d-flex justify-content-between">
-                      <a href="#" className="btn btn-sm btn-info mr-4">Connect</a>
-                      <a href="#" className="btn btn-sm btn-default float-right">Message</a>
+                      <a href="#" className="btn btn-sm btn-info mr-4">
+                        Connect
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-default float-right"
+                      >
+                        Message
+                      </a>
                     </div>
                   </div>
                   <div className="card-body pt-0 pt-md-4">
@@ -83,16 +112,21 @@ const Profile = () => {
                     </div>
                     <div className="text-center">
                       <h3>
-                      {store.user.name}{store.user.last_name}<span className="font-weight-light">, 27</span>
+                        {store.user.name}
+                        {store.user.last_name}
+                        <span className="font-weight-light">, 27</span>
                       </h3>
                       <div className="h5 font-weight-300">
-                        <i className="ni location_pin mr-2" />{store.user.country}
+                        <i className="ni location_pin mr-2" />
+                        {store.user.country}
                       </div>
                       <div className="h5 mt-4">
-                        <i className="ni business_briefcase-24 mr-2" />Solution Manager - Creative Tim Officer
+                        <i className="ni business_briefcase-24 mr-2" />
+                        Solution Manager - Creative Tim Officer
                       </div>
                       <div>
-                        <i className="ni education_hat mr-2" />University of Computer Science
+                        <i className="ni education_hat mr-2" />
+                        University of Computer Science
                       </div>
                       {/* <hr className="my-4" />
                       <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
@@ -102,9 +136,9 @@ const Profile = () => {
                 </div>
               </div>
 
-{/*---------------------------------------------------- Favorites content--------------------------------------------------- */}
+              {/*---------------------------------------------------- Favorites content--------------------------------------------------- */}
 
-          <div className="col-xl-8 order-xl-1">
+              <div className="col-xl-8 order-xl-1">
                 <div className="card bg-secondary shadow">
                   <div className="card-header bg-white border-0">
                     <div className="row align-items-center">
@@ -112,30 +146,25 @@ const Profile = () => {
                         <h3 className="mb-0">My favorites</h3>
                       </div>
                       <div className="col-4 text-right">
-                        <a href="#!" className="btn btn-sm btn-primary">Settings</a>
+                        <a href="#!" className="btn btn-sm btn-primary">
+                          Settings
+                        </a>
                       </div>
                     </div>
                   </div>
 
-                  <div className="card-body">
-                    
-                  </div>
+                  <div className="card-body"></div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
         <footer className="footer">
           <div className="row align-items-center justify-content-xl-between">
-            <div className="col-xl-6 m-auto text-center">
-             
-            </div>
+            <div className="col-xl-6 m-auto text-center"></div>
           </div>
         </footer>
       </div>
-
-
     </div>
   );
 };

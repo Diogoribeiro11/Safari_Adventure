@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     actions.privateData();
-  }, [store.datos]);
+  }, [store.body]);
 
   return (
     <div className="sticky-top">
@@ -140,7 +140,7 @@ export const Navbar = () => {
                 CONTACT
               </Link>
             </button>
-            {store.datos ? (
+            {store.body ? (
               <button className="nav2Button me-3 nav-item  ">
                 <Link to="/Profile" className="nav2Button">
                   PROFILE

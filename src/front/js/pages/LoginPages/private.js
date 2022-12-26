@@ -4,7 +4,7 @@ import { Context } from "../../store/appContext";
 
 const Private = () => {
   const { store, actions } = useContext(Context);
-  console.log(store.datos?.token);
+  console.log(store.body?.token);
   console.log(store.user);
   const { id } = useParams();
   const history = useNavigate();
